@@ -1,0 +1,28 @@
+{
+  "name": "oc-baloon-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fixed/index.ts",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.3.0",
+    "typescript": "^4.6.4",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.5",
+    "bootstrap": "^5.1.3",
+    "path": "^0.12.7"
+  },
+  "private": true,
+  "author": "",
+  "license": "ISC"
+}
