@@ -48,7 +48,7 @@ class Page1 implements Page{
 }
 
 class Page2 implements Page{
-  private baloons: ParentBaloon[] = new Array(2);
+  private baloons: ParentBaloon[] = new Array(1);
 
   nextFrame(): void {
     for( let b of this.baloons){
@@ -64,7 +64,7 @@ class Page2 implements Page{
 
   public init(img: HTMLImageElement): void {
     for( let i = 0; i < this.baloons.length; i++){
-      this.baloons[i] = new BaloonF(img);
+      this.baloons[i] = new Baloon2(img);
     }
   }
 }
