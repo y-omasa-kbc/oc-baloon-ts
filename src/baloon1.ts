@@ -1,7 +1,7 @@
 import { ParentBaloon } from './fixed/ParentBaloon';
 
 //風船の設計図
-export class Baloon1 extends ParentBaloon {
+class Baloon1 extends ParentBaloon {
   img: HTMLImageElement;
   
   //風船が持つ記憶
@@ -28,3 +28,5 @@ export class Baloon1 extends ParentBaloon {
     cntx.drawImage(this.img, this.imageX, this.imageY); 
   }
 }
+
+export { Baloon1 };
