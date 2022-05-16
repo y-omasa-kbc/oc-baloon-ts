@@ -24,6 +24,7 @@ export class Descriptions {
         <p>
         今の風船の動きは、ソースコード baloon1.ts に書かれています。このソースコードを編集して、ゆっくり移動する風船にしてください。
         </p>
+        <a href="/sup101.html" class="btn btn-outline-primary" target="supplimental">ソースコードの構造</a><br>
     
     `;
     this.content[2] = `
