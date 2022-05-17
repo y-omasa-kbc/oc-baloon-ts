@@ -26,7 +26,7 @@ window.addEventListener("load", (e) => {
 
   page = pages[Number(param)];
   document.getElementById("description").innerHTML = descriptions.content[Number(param)];
-  img.src = "img/baloon.gif";
+  img.src = "img/Balloon.gif";
   img.onload = function() {
     page.init(img);
     page.render(skyx);

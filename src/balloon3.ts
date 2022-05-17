@@ -1,7 +1,7 @@
-import { ParentBaloon } from './fixed/ParentBaloon';
+import { ParentBalloon } from './fixed/ParentBalloon';
 
 //風船の設計図
-class Baloon3 extends ParentBaloon {
+class Balloon3 extends ParentBalloon {
   img: HTMLImageElement;
   
   //風船が持つ記憶
@@ -29,4 +29,4 @@ class Baloon3 extends ParentBaloon {
   }
 }
 
-export { Baloon3 };
+export { Balloon3 };

@@ -1,6 +1,6 @@
-import { ParentBaloon } from '../fixed/ParentBaloon';
+import { ParentBalloon } from '../fixed/ParentBalloon';
 
-class BaloonF extends ParentBaloon {
+class BalloonF extends ParentBalloon {
   img: HTMLImageElement;
   
   imageX: number;
@@ -40,4 +40,4 @@ class BaloonF extends ParentBaloon {
   }
 }
 
-export { BaloonF };
+export { BalloonF };

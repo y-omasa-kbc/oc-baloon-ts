@@ -1,11 +1,11 @@
-import { ParentBaloon } from './parentBaloon';
-import { BaloonF } from '../final/baloonF';
-import { Baloon1 } from '../baloon1';
-import { Baloon2 } from '../baloon2';
-import { Baloon3 } from '../baloon3';
-import { Baloon4 } from '../baloon4';
-import { Baloon5 } from '../baloon5';
-import { Baloon6 } from '../baloon6';
+import { ParentBalloon } from './parentBalloon';
+import { BalloonF } from '../final/balloonF';
+import { Balloon1 } from '../balloon1';
+import { Balloon2 } from '../balloon2';
+import { Balloon3 } from '../balloon3';
+import { Balloon4 } from '../balloon4';
+import { Balloon5 } from '../balloon5';
+import { Balloon6 } from '../balloon6';
 
 interface Page{
   init(img: HTMLImageElement): void;
@@ -14,150 +14,150 @@ interface Page{
 }
 
 class PageF implements Page{
-  private baloons: ParentBaloon[] = new Array(10);
+  private balloons: ParentBalloon[] = new Array(10);
 
   nextFrame(): void {
-    for( let b of this.baloons){
+    for( let b of this.balloons){
       b.move();
     }
   }
 
   render(cntx: CanvasRenderingContext2D): void {
-    for( let b of this.baloons){
+    for( let b of this.balloons){
       b.draw(cntx);
     }
   }
 
   public init(img: HTMLImageElement): void {
-    for( let i = 0; i < this.baloons.length; i++){
-      this.baloons[i] = new BaloonF(img);
+    for( let i = 0; i < this.balloons.length; i++){
+      this.balloons[i] = new BalloonF(img);
     }
   }
 }
 
 class Page1 implements Page{
-  private baloon: ParentBaloon;
+  private balloon: ParentBalloon;
 
   nextFrame(): void {
-    this.baloon.move();
+    this.balloon.move();
   }
 
   render(cntx: CanvasRenderingContext2D): void {
-    this.baloon.draw(cntx);
+    this.balloon.draw(cntx);
   }
 
   public init(img: HTMLImageElement): void {
-      this.baloon = new Baloon1(img);
+      this.balloon = new Balloon1(img);
   }
 }
 
 class Page2 implements Page{
-  private baloons: ParentBaloon[] = new Array(1);
+  private balloons: ParentBalloon[] = new Array(1);
 
   nextFrame(): void {
-    for( let b of this.baloons){
+    for( let b of this.balloons){
       b.move();
     }
   }
 
   render(cntx: CanvasRenderingContext2D): void {
-    for( let b of this.baloons){
+    for( let b of this.balloons){
       b.draw(cntx);
     }
   }
 
   public init(img: HTMLImageElement): void {
-    for( let i = 0; i < this.baloons.length; i++){
-      this.baloons[i] = new Baloon2(img);
+    for( let i = 0; i < this.balloons.length; i++){
+      this.balloons[i] = new Balloon2(img);
     }
   }
 }
 
 class Page3 implements Page{
-  private baloons: ParentBaloon[] = new Array(1);
+  private balloons: ParentBalloon[] = new Array(1);
 
   nextFrame(): void {
-    for( let b of this.baloons){
+    for( let b of this.balloons){
       b.move();
     }
   }
 
   render(cntx: CanvasRenderingContext2D): void {
-    for( let b of this.baloons){
+    for( let b of this.balloons){
       b.draw(cntx);
     }
   }
 
   public init(img: HTMLImageElement): void {
-    for( let i = 0; i < this.baloons.length; i++){
-      this.baloons[i] = new Baloon3(img);
+    for( let i = 0; i < this.balloons.length; i++){
+      this.balloons[i] = new Balloon3(img);
     }
   }
 }
 
 
 class Page4 implements Page{
-  private baloons: ParentBaloon[] = new Array(2);
+  private balloons: ParentBalloon[] = new Array(2);
 
   nextFrame(): void {
-    for( let b of this.baloons){
+    for( let b of this.balloons){
       b.move();
     }
   }
 
   render(cntx: CanvasRenderingContext2D): void {
-    for( let b of this.baloons){
+    for( let b of this.balloons){
       b.draw(cntx);
     }
   }
 
   public init(img: HTMLImageElement): void {
-    for( let i = 0; i < this.baloons.length; i++){
-      this.baloons[i] = new Baloon4(img);
+    for( let i = 0; i < this.balloons.length; i++){
+      this.balloons[i] = new Balloon4(img);
     }
   }
 }
 
 class Page5 implements Page{
-  private baloons: ParentBaloon[] = new Array(5);
+  private balloons: ParentBalloon[] = new Array(5);
 
   nextFrame(): void {
-    for( let b of this.baloons){
+    for( let b of this.balloons){
       b.move();
     }
   }
 
   render(cntx: CanvasRenderingContext2D): void {
-    for( let b of this.baloons){
+    for( let b of this.balloons){
       b.draw(cntx);
     }
   }
 
   public init(img: HTMLImageElement): void {
-    for( let i = 0; i < this.baloons.length; i++){
-      this.baloons[i] = new Baloon5(img);
+    for( let i = 0; i < this.balloons.length; i++){
+      this.balloons[i] = new Balloon5(img);
     }
   }
 }
 
 class Page6 implements Page{
-  private baloons: ParentBaloon[] = new Array(10);
+  private balloons: ParentBalloon[] = new Array(10);
 
   nextFrame(): void {
-    for( let b of this.baloons){
+    for( let b of this.balloons){
       b.move();
     }
   }
 
   render(cntx: CanvasRenderingContext2D): void {
-    for( let b of this.baloons){
+    for( let b of this.balloons){
       b.draw(cntx);
     }
   }
 
   public init(img: HTMLImageElement): void {
-    for( let i = 0; i < this.baloons.length; i++){
-      this.baloons[i] = new Baloon6(img);
+    for( let i = 0; i < this.balloons.length; i++){
+      this.balloons[i] = new Balloon6(img);
     }
   }
 }

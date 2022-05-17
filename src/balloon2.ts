@@ -1,7 +1,7 @@
-import { ParentBaloon } from './fixed/ParentBaloon';
+import { ParentBalloon } from './fixed/ParentBalloon';
 
 //風船の設計図
-class Baloon4 extends ParentBaloon {
+class Balloon2 extends ParentBalloon {
   img: HTMLImageElement;
   
   //風船が持つ記憶
@@ -15,12 +15,12 @@ class Baloon4 extends ParentBaloon {
     //ここまでは変更しない (画像設定など)
   
     this.imageX = 50;    //記憶のimageXを50にする
-    this.imageY = 500;  //記憶のimageYを300にする
+    this.imageY = 300;  //記憶のimageYを300にする
   }
 
   // ↓フレームが進むたびに風船に起きる変化
   move() {
-    this.imageY = this.imageY - 1;
+    this.imageY = this.imageY + 1;
   }
 
   // ↓フレームで風船を描画（今回は変更しない）
@@ -29,4 +29,4 @@ class Baloon4 extends ParentBaloon {
   }
 }
 
-export { Baloon4 };
+export { Balloon2 };
