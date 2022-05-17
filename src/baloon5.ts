@@ -24,8 +24,8 @@ class Baloon5 extends ParentBaloon {
 
   // ↓フレームが進むたびに風船に起きる変化
   move() {
-    this.imageX = this.imageX + this.deltaX;
-    this.imageY = this.imageY + this.deltaY;
+    this.imageX = this.imageX + this.changeX;
+    this.imageY = this.imageY + this.changeY;
   }
 
   // ↓フレームで風船を描画（今回は変更しない）
