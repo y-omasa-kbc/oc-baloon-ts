@@ -4,12 +4,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // BootstrapのJavaScript側の機能を読み込む
 import "bootstrap";
 
-import { Page, PageF, Page1, Page2, Page3, Page4 } from "./pages";
+import { Page, PageF, Page1, Page2, Page3, Page4, Page5 } from "./pages";
 import { Descriptions } from "./descriptions";
 
 const img = new Image();    //画像オブジェクト作成
 let page: Page;
-const pages: Page[] = [new PageF(), new Page1(), new Page2(), new Page3(), new Page4()];
+const pages: Page[] = [new PageF(), new Page1(), new Page2(), new Page3(), new Page4(), new Page5()];
 
 const descriptions = new Descriptions();
 

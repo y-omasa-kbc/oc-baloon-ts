@@ -4,6 +4,7 @@ import { Baloon1 } from '../baloon1';
 import { Baloon2 } from '../baloon2';
 import { Baloon3 } from '../baloon3';
 import { Baloon4 } from '../baloon4';
+import { Baloon5 } from '../baloon5';
 
 interface Page{
   init(img: HTMLImageElement): void;
@@ -116,4 +117,26 @@ class Page4 implements Page{
   }
 }
 
-export { Page, PageF, Page1, Page2, Page3, Page4 };
+class Page5 implements Page{
+  private baloons: ParentBaloon[] = new Array(5);
+
+  nextFrame(): void {
+    for( let b of this.baloons){
+      b.move();
+    }
+  }
+
+  render(cntx: CanvasRenderingContext2D): void {
+    for( let b of this.baloons){
+      b.draw(cntx);
+    }
+  }
+
+  public init(img: HTMLImageElement): void {
+    for( let i = 0; i < this.baloons.length; i++){
+      this.baloons[i] = new Baloon5(img);
+    }
+  }
+}
+
+export { Page, PageF, Page1, Page2, Page3, Page4, Page5 };
