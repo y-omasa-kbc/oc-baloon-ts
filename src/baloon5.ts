@@ -18,13 +18,11 @@ class Baloon5 extends ParentBaloon {
   
     this.imageX = Math.random()*600;    //記憶のimageXを50にする
     this.imageY = Math.random()*600;  //記憶のimageYを300にする
-    this.changeX = 2;
     this.changeY = -1;
   }
 
   // ↓フレームが進むたびに風船に起きる変化
   move() {
-    this.imageX = this.imageX + this.changeX;
     this.imageY = this.imageY + this.changeY;
   }
 
