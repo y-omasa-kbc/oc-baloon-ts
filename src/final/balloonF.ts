@@ -1,6 +1,6 @@
-import { ParentBaloon } from '../fixed/ParentBaloon';
+import { ParentBalloon } from '../fixed/ParentBalloon';
 
-export class BaloonF extends ParentBaloon {
+class BalloonF extends ParentBalloon {
   img: HTMLImageElement;
   
   imageX: number;
@@ -39,3 +39,5 @@ export class BaloonF extends ParentBaloon {
     cntx.drawImage(this.img, this.imageX, this.imageY); 
   }
 }
+
+export { BalloonF };
