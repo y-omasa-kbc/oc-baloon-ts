@@ -4,7 +4,7 @@
   "description": "",
   "main": "fixed/index.ts",
   "scripts": {
-    "start": "webpack-dev-server --open",
+    "start": "webpack-dev-server",
     "build": "webpack",
     "watch": "webpack --watch"
   },
