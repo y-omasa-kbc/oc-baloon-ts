@@ -25,7 +25,7 @@ export class Descriptions {
         今の風船の動きは、ソースコード Balloon1.ts に書かれています。このソースコードを編集して、ゆっくり移動する風船にしてもらいます。
         </p>
         <P>演習に先立って、ソースコードの構造を確認します。<br>
-        <a href="/sup101.html" class="btn btn-outline-primary" target="supplimental">ソースコードの構造</a><br>
+        <a href="/sup101.html" class="btn btn-outline-secondary my-1" target="supplimental">ソースコードの構造</a><br>
         風船の設計図には、風船が持つ記憶と、その記憶に関する処理が書かれています。<br>
         アニメーションはパラパラ漫画のように、1秒間に約30回画面が変化します。その変化する画面１つを1フレームと呼びます。<br>
         アニメーションの最初にメソッドconstructorが動き、風船が描画されます。<br>
