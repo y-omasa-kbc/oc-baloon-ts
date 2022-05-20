@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <title>補助画面 - プログラムのルール</title>
+  <script src="main.js" defer></script>
+</head>
+<body">
+<header>
+</header>
+<main>
+  <div class="container">
+    <div class="row">
+<h5>文字の表示色</h5>
+<p>
+プログラムコードの表示に色がついていますが、これはプログラムを読みやすくするために自動的につけられる色です。<br>
+色は変えられませんので、気に入らなくても我慢してくださいw
+</p>
+<h5>コメント</h5>
+<p>
+  <code style="color:#050;">//風船の設計図</code><br>
+  のように<code style="color:#050;">//</code>2つのスラッシュ(/)から後ろはコメントです。(緑色で表示されています)<br>
+  プログラムの内容を分かりやすくするためのメモの役割をしますが、プログラムとしては無視されます。
+  この中身を書き換えてもコンピューターには全く伝わりません。
+</p>
+<h5>変数</h5>
+<p>
+  プログラムで使用する数字などの情報を入れる容器の役割をします。
+  クラスのデータであるフィールドは、この変数の集まり。<br>
+  メソッド（情報を処理する部分にあたります）の中で
+  <code>this.imageX = 0;</code>
+  と書くと、それはフィールド(this)にあるimageXという変数に、数字0を入れるということ。<br>
+  =は同じにするという命令です。
+  その先で<code>this.imageX</code>と書くと、そこは0という数字に置き換わります。<br>
+  一つの変数に何度でも違う数を入れなおせますが、最後に入れた数が使われます。
+</p>
+
+<img src="img/step1-01.png" alt="sup101" >
+
+    </div>
+  </div>
+</main>
+<footer>
+</footer>
+</body>
+</html>

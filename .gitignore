@@ -104,5 +104,5 @@ dist/*
 # TernJS port file
 .tern-port
 
-!/dist/index.html
+!/dist/*.html
 !/dist/img
