@@ -12,6 +12,7 @@
 <main>
   <div class="container">
     <div class="row">
+     
 <h5>文字の表示色</h5>
 <p>
 プログラムコードの表示に色がついていますが、これはプログラムを読みやすくするために自動的につけられる色です。<br>
@@ -20,7 +21,7 @@
 <h5>コメント</h5>
 <p>
   <code style="color:#050;">//風船の設計図</code><br>
-  のように<code style="color:#050;">//</code>2つのスラッシュ(/)から後ろはコメントです。(緑色で表示されています)<br>
+  のような2つのスラッシュ(<code style="color:#050;">//</code>)から後ろはコメントです。(緑色で表示されています)<br>
   プログラムの内容を分かりやすくするためのメモの役割をしますが、プログラムとしては無視されます。
   この中身を書き換えてもコンピューターには全く伝わりません。
 </p>
@@ -28,16 +29,25 @@
 <p>
   プログラムで使用する数字などの情報を入れる容器の役割をします。
   クラスのデータであるフィールドは、この変数の集まり。<br>
-  メソッド（情報を処理する部分にあたります）の中で
-  <code>this.imageX = 0;</code>
-  と書くと、それはフィールド(this)にあるimageXという変数に、数字0を入れるということ。<br>
-  =は同じにするという命令です。
-  その先で<code>this.imageX</code>と書くと、そこは0という数字に置き換わります。<br>
+  メソッド（情報を処理する部分にあたります）の中で<br>
+  <code style="color:#55f;">this.imageX = 0;</code><br>
+  と書くと、それはフィールド(this)にあるimageXという変数に、数字0を入れるということです。= は同じにするという命令です。<br>
+  その先で <code style="color:#55f;">this.imageX</code> と書くと、そこは0という数字に置き換わります。<br>
   一つの変数に何度でも違う数を入れなおせますが、最後に入れた数が使われます。
 </p>
+<h5>分岐(Step6で使用)</h5>
+<p>
+  以下のように書かれた箇所がballoon6.tsのメソッド<code style="color:#33d;">move()</code>にあります。<br>
+  <code style="color:#55f;">  if(this.imageX < 0){<br>
+    &nbsp;&nbsp;this.changeX *= -1;<br>
+  }    </code> <br>
 
-<img src="img/step1-01.png" alt="sup101" >
-
+  ifは英語のifそのもので「もし」という意味になります。<br>
+  つまり、この部分の内容を日本語で表すと、<br>
+  もし <code style="color:#55f;">this.imageX < 0</code> ならば、(もしthis.imageXが0未満ならば)<br>
+  &nbsp;&nbsp;<code style="color:#55f;">this.changeX *= -1;</code>を行いなさい。<br>
+  という意味になります。
+</p>
     </div>
   </div>
 </main>
