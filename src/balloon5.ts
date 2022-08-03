@@ -16,8 +16,8 @@ class Balloon5 extends ParentBalloon {
     this.img = img;
     //ここまでは変更しない (画像設定など)
   
-    this.imageX = Math.random()*600;    //記憶のimageXを50にする
-    this.imageY = Math.random()*600;  //記憶のimageYを300にする
+    this.imageX = Math.random()*600;  //記憶のimageXを0-600の乱数にする
+    this.imageY = Math.random()*600;  //記憶のimageYを0-600の乱数にする
     this.changeY = -1;
   }
 

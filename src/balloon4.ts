@@ -15,7 +15,7 @@ class Balloon4 extends ParentBalloon {
     //ここまでは変更しない (画像設定など)
   
     this.imageX = 50;    //記憶のimageXを50にする
-    this.imageY = 500;  //記憶のimageYを300にする
+    this.imageY = 600 - 100;  //記憶のimageYを下端600から100上げる
   }
 
   // ↓フレームが進むたびに風船に起きる変化
